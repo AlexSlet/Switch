@@ -41,14 +41,253 @@ body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.65
+	line-height: 1.3
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
+	margin: 0
+	padding: 0
+	color: $text-color
+ul 
+	list-style-type: none
 
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
+
+.container 
+  max-width: 1170px
+  position: relative
+
+//Nav style
+.topLine
+	position: absolute
+	width: 100%
+.navigation
+	ul 
+		display: flex
+		align-items: center
+		list-style-type: none
+		padding: 0
+		margin: 0
+		li 
+			margin-right: 20px
+			&:last-child
+				margin-right: 0 
+			a 
+				color: #fff
+				display: inline-block
+				text-decoration: none
+				font-size: 0.9rem
+				white-space: nowrap
+				transition: all 0.3s ease
+				padding: 0 0 7px 0
+				&::before
+					content: ""
+					height: 5px
+					width: 100%
+					background-color: $accent
+					display: block
+					transition: all 0.3s ease
+					transform: scale(0)
+				&:hover
+					font-weight: 700
+					&::before
+						transform: scale(1)
+//Nav style
+//Logo style
+.logo
+	display: flex
+	justify-content: center
+	align-items: center
+//Logo style
+//Search style
+.search
+	display: flex 
+	justify-content: flex-end
+	align-items: center
+	.searhBox
+		position: relative
+		input
+			font-size: 1rem
+			font-family: $default-font
+			padding: 5px 20px 5px 10px
+			background-color: rgba(255,255,255,0.8)
+			border-radius: 25px
+			border-style: none
+			outline: none
+			color: #000
+			transition: all 0.3s ease
+			&:hover
+				background-color: rgba(255,255,255,1)
+			&:focus
+				background-color: rgba(255,255,255,1)
+		&::before
+			content: ''
+			background: url(../img/search.png)
+			position: absolute
+			width: 14px
+			height: 14px
+			font-family: "Font-Awesome"
+			font-size: 14px
+			display: block
+			font-weight: 300
+			background-repeat: no-repeat
+			right: 10px
+			top: 5px
+//Search style
+//Header style
+.header
+	height: 100vh
+	background-image: url(../img/background.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: 10% 67%
+
+.mainTittle
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	height: 100%
+	text-align: center
+	h1
+		font-family: "Montserrat-Bold" 
+		font-size: 55px
+		color: #fff
+		margin-bottom: 22px
+	button
+		background-color: $accent
+		padding: 10px 25px
+		font-family: "Montserrat-Regular"
+		font-size: 22px
+		border: none
+		border-radius: 25px
+		color: #fff
+		text-transform: uppercase
+		outline: none
+		cursor: pointer
+		transition: all 0.3s ease
+		&:hover
+			background-color: darken($accent, 10%)
+	a 
+		display: block
+		text-decoration: none
+		color: #111
+		padding: 3px 10px 3px 10px
+		background-color: rgba(255,255,255, 0.8)
+		border-radius: 25px
+		position: absolute
+		bottom: 10px
+		transition: all 0.3s ease
+		&:hover
+			background-color: rgba(255,255,255, 1)
+		.fa
+			font-size: 14px
+			margin-left: 3px
+			color: #111 
+//Header style
+//weDo style
+.weDo
+	background-color: #fff
+
+.titlle
+	text-align: center
+	color: $text-color
+	margin-bottom: 70px
+	h2
+		font-size: 1.3rem
+		letter-spacing: 4px
+		margin-top: 43px
+		margin-bottom: -5px
+	span
+		display: inline-block
+		width: 45px
+		height: 2px
+		background-color: $text-color
+	p 
+		font-family: "OpenSans-Light"
+		font-size: 0.9rem
+		font-weight: 600
+		color: #b7b3b3
+		margin-top: 5px
+
+.card
+	text-align: center
+	margin-bottom: 70px
+	.card-image
+		padding: 33px 25px
+		background-color: #e1f3e1
+		border-radius: 30px
+		display: inline-block
+	h3
+		font-family: "Montserrat-Regular"
+		font-size: 1.4rem
+		margin-bottom: 16px
+	p 
+		font-size: 0.9rem
+		padding: 0 40px
+		font-family: "Montserrat-Regular"
+	button
+		font-family: "Montserrat-Bold"
+		font-size: 0.9rem
+		margin-top: 10px
+		margin-bottom: 0
+		color: #fff 
+		padding: 7px 15px
+		background-color: $accent
+		border-radius: 25px
+		border: none
+		outline: none
+		cursor: pointer
+		transition: all 0.3s ease
+		&:hover
+			background-color: darken($accent, 10%)
+//weDo style
+//latestWork style
+.latestWork
+	background-color: $accent
+	padding: 40px 0 50px 0
+	.titlle
+		color: #207b20
+		margin-bottom: 60px
+		span
+			background-color: #207b20
+		p 
+			color: #2b9b2b
+	.sorting
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 25px
+		ul 
+			display: flex
+			background-color: #fff 
+			border-radius: 25px
+			border: 1px solid #207b20
+			padding: 0
+			overflow: hidden
+			margin: 0
+			li 
+				padding: 7px 20px
+				font-family: "Montserrat-Regular"
+				font-size: 1rem
+				color: #2b9b2b
+				border-right: 1px solid #207b20
+				cursor: pointer
+				transition: all 0.3s ease
+				&:last-child
+					border-right: none
+				&:hover
+					background-color: #2b9b2b
+					color: #fff
+.image-grid
+	margin-top: 30px
+	img
+		border-radius: 3px
+.w-100
+	width: 100%
+//latestWork style
 
 @import "media" // Всегда в конце
