@@ -249,6 +249,7 @@ ul
 .latestWork
 	background-color: $accent
 	padding: 40px 0 50px 0
+	text-align: center
 	.titlle
 		color: #207b20
 		margin-bottom: 60px
@@ -283,7 +284,7 @@ ul
 					background-color: #2b9b2b
 					color: #fff
 
-.workImage
+.workImages
 	display: flex
 	justify-content: space-between
 	flex-wrap: wrap
@@ -294,6 +295,33 @@ ul
 	padding: 5px
 	img
 		border-radius: 3px
+.button
+	padding: 10px 35px 10px 25px
+	background-color: darken($accent, 18%)
+	border: none
+	border-radius: 25px
+	color: #fff
+	font-size: 18px
+	font-family: "Montserrat-Regular"
+	margin-top: 50px
+	position: relative
+	outline: none
+	cursor: pointer
+	transition: all 0.3s ease
+	display: inline-block
+	text-decoration: none
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		width: 14px
+		height: 10px
+		background-image: url(../img/Shape-2.png)
+		right: 15px
+		top: 16px
+	&:hover
+		background-color: darken($accent, 15%)
+
 //latestWork style
 
 @import "media" // Всегда в конце
