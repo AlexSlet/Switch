@@ -96,12 +96,14 @@ ul
 					&::before
 						transform: scale(1)
 //Nav style
+
 //Logo style
 .logo
 	display: flex
 	justify-content: center
 	align-items: center
 //Logo style
+
 //Search style
 .search
 	display: flex 
@@ -137,6 +139,7 @@ ul
 			right: 10px
 			top: 5px
 //Search style
+
 //Header style
 .header
 	height: 100vh
@@ -188,9 +191,11 @@ ul
 			margin-left: 3px
 			color: #111 
 //Header style
+
 //weDo style
 .weDo
 	background-color: #fff
+	padding-top: 40px
 
 .titlle
 	text-align: center
@@ -199,7 +204,6 @@ ul
 	h2
 		font-size: 1.3rem
 		letter-spacing: 4px
-		margin-top: 43px
 		margin-bottom: -5px
 	span
 		display: inline-block
@@ -212,6 +216,7 @@ ul
 		font-weight: 600
 		color: #b7b3b3
 		margin-top: 5px
+		padding: 0 20px
 
 .card
 	text-align: center
@@ -245,6 +250,7 @@ ul
 		&:hover
 			background-color: darken($accent, 10%)
 //weDo style
+
 //latestWork style
 .latestWork
 	background-color: $accent
@@ -322,14 +328,15 @@ ul
 	&:hover
 		background-color: darken($accent, 15%)
 //latestWork style
+
 //SliderSection
 .sliderSection
 	padding-bottom: 30px
+	padding-top: 20px
 	.titlle
 		margin-bottom: 35px
 .swiper-container
 	max-width: 760px
-	height: 180px
 	.swiper-slide 
 	    text-align: center
 	    font-size: 18px
@@ -364,7 +371,223 @@ ul
 		background-image: url(../img/svg/right.svg)
 	.swiper-button-next, .swiper-button-prev
 		top: 35%
-
 //SliderSection
 
+//ClientSection
+.client
+	background-color: #f2f1f1
+	padding: 20px 0 60px 0
+	text-align: center
+	.titlle
+		margin-bottom: 35px
+	.clientImages
+		display: flex
+		justify-content: space-around
+		flex-wrap: wrap
+		max-width: 920px
+		margin: 0 auto
+		.image-grid
+			width: 160px
+			height: 80px
+			display: flex
+			justify-content: center
+			align-items: center
+			margin: 25px 20px 0 20px
+			img
+				border-radius: 0
+	.button
+		padding: 5px 55px 5px 25px
+		background-color: #dddcdc
+		color: #a59d9d
+		line-height: 30px
+		&::after
+			background-image: url(../img/Shape-1.png)
+			right: 20px
+			top: 15px
+		&:hover
+			background-color: darken(#dddcdc, 5%)
+//ClientSection
+
+//Team
+.team
+	background-color: $accent
+	padding: 20px 0 0 0
+	text-align: center
+	.titlle
+		color: #207b20
+		margin-bottom: 30px
+		span
+			background-color: #207b20
+		p 
+			color: #2b9b2b
+.team-box
+	display: flex
+	justify-content: space-between
+	max-width: 920px
+	margin: 0 auto
+	flex-wrap: wrap
+	.employee
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+		margin-top: 15px
+		img 
+			padding: 5px
+		span 
+			height: 80px
+			width: 2px
+			background-color: darken($accent, 30%)
+			display: inline-block
+		h4
+			color: #fff
+			font-family: "Montserrat-Regular"	
+			font-weight: lighter		
+			font-size: 1rem
+			margin: 10px 0
+		.follow
+			background-color: rgba(255,255,255,0.7)
+			border-radius: 25px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			a 
+				display: inline-block
+				width: 20px
+				height: 20px
+				margin: 5px
+				img 
+					padding: 0
+.teamButton
+	background-color: #3eba3e
+	display: block
+	padding: 25px 0
+	margin-top: 65px
+	.button
+		padding: 10px 25px
+		margin: 0
+		text-transform: uppercase
+		font-size: 1.1rem
+		font-family: $default-font
+		background-color: $accent
+		box-shadow: -2px 5px 5px 1px rgba(0,0,0,0.1)
+		&::after
+			display: none
+		&:hover
+			background-color: darken($accent, 5%)
+
+//Team
+
+//Footer
+.footer
+	background-color: #333
+	color: #ccc
+	padding: 30px 0
+	text-align: center
+	.follow
+			background-color: rgba(255,255,255,0.7)
+			border-radius: 25px
+			display: inline-block
+			margin-top: 14px
+			a 
+				display: inline-block
+				width: 20px
+				height: 20px
+				margin: 5px
+				img 
+					padding: 0
+
+.footerTittle
+	text-align: center
+	margin-bottom: 15px
+	h3
+		font-size: 1rem
+		color: #ddd
+		text-transform: uppercase
+		font-family: $default-font
+		letter-spacing: 3px
+		margin: 0
+		margin-bottom: -10px
+	span 
+		width: 30px
+		height: 2px
+		display: inline-block
+		background-color: #ddd
+.aboutUs
+	p 
+		text-align: center
+		padding: 0 15px
+.recentPost
+	display: flex
+	flex-direction: column
+	align-items: center
+	.post 
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		margin-top: 10px
+		img 
+			width: 55px
+			height: 55px
+			border-radius: 5px
+			margin-right: 7px
+		.postName
+			text-align: left
+			p 
+				margin: 0
+			.postTheme
+				font-size: 0.8rem
+				text-transform: uppercase
+				padding: 3px 5px
+				display: inline-block
+				line-height: 13px
+				color: #fff 
+				border-radius: 3px
+			.design
+				background-color: #ffba00
+			.photo
+				background-color: #089dea
+			.book
+				background-color: #f34d04
+			.magazine
+				background-color: $accent
+.contactUs
+	p 
+		margin: 0
+		font-size: 13px
+		font-weight: 400
+	.footerForm
+		display: flex
+		flex-direction: column
+		width: 100%
+		margin-top: 25px
+		input,textarea
+			font-size: 16px
+			border: none
+			background-color: #444
+			padding: 8px 15px
+			margin-bottom: 2px
+			color: #777
+			outline: none
+		input[type="text"]
+			border-top-left-radius: 3px
+			border-top-right-radius: 3px
+		textarea
+			width: 100%
+			height: 130px
+			resize: none
+		button
+			padding: 7px 15px
+			background-color: darken($accent, 15%)
+			border: none
+			color: #fff
+			text-transform: uppercase
+			font-size: 14px
+			border-bottom-left-radius: 3px
+			border-bottom-right-radius: 3px
+			cursor: pointer
+			transition: all 0.3s ease
+			&:hover
+				background-color: darken($accent, 20%)
+//Footer
 @import "media" // Всегда в конце
